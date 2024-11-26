@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piket Kelas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/logo_sija2.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="navbar">
+        <a href="#" class="judul"><img src="./img/kelas-removebg-preview.png" alt="kelas" width="200px" /></a>
+        <button class="menu-toggle" aria-label="Toggel-menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Jadwal Mapel</a></li>
+          <li><a href="#">Jadwal Piket</a></li>
+          <li><a href="#">Form Pengumpulan</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="isi" style="font-size: x-large">
+      <h1>Make your day more clean</h1>
+      <p>Dont forget "Kebersihan Sebagian Dari Iman"</p>
+    </div>
+    <div class="container">
+      <h1 class="titlee">Jadwal Piket</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Hari</th>
+            <th>Nama</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Senin</td>
+            <td>Almeyda, Risqi, Beryl, Samuel, Lalu, Riven, Zaky</td>
+          </tr>
+          <tr>
+            <td>Selasa</td>
+            <td>Inaya, Olivia, Rena, Naurah, Dafa, Rasya, Lucky</td>
+          </tr>
+          <tr>
+            <td>Rabu</td>
+            <td>Keyla, Vira, Marvellin, Meiza, Naysylla, Sedyo, Kenzie</td>
+          </tr>
+          <tr>
+            <td>Kamis</td>
+            <td>Naila, Riska, Mufida, Saidatul, Seves, Wyldan, Jasmine</td>
+          </tr>
+          <tr>
+            <td>Jumat</td>
+            <td>Indah, Indri, Laila, Tasya, Selvi, Vania, Rheza</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      const navbar = document.querySelector('.navbar');
+      const navLinks = document.querySelector('.nav-links');
+
+      navbar.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+    <footer><i class="bi bi-c-circle"></i> Copyright Create by XI SIJA II</footer>
+  </body>
+</html>
